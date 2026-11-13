@@ -73,5 +73,5 @@ installButton.addEventListener('click', async () => {
 window.addEventListener('appinstalled', () => showToast('CONVIVA instalado. Bom ter você por perto!'));
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
 }
